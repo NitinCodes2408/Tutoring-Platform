@@ -28,6 +28,7 @@ h6 {
 /* Navigation */
 nav {
     position: fixed;
+    padding: 10px 10px 10px 10px;
     width: 100%;
     background-color: #ffff;
     display: flex;
@@ -36,6 +37,8 @@ nav {
     align-items: center;
     padding: 1vw 8vw;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: #55b4b0;
+    z-index: 999;
 }
 
 /* main icon */
@@ -43,6 +46,7 @@ nav {
 nav img {
     width: 100px;
     cursor: pointer;
+    height: 100px;
 }
 
 nav .navigation ul {
@@ -68,12 +72,14 @@ nav .navigation ul li a {
 nav .navigation ul li a:hover {
     color: #fdc93b;
     font-size: 20px;
+    
 }
 
 /* Home */
 
 #home {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)) url("images/back.png");
+    background-image: url(images/back1.png);
+    z-index: 0 1 2;        
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -85,18 +91,19 @@ nav .navigation ul li a:hover {
     text-align: center;
     padding-top: 100px;
     /* font-style: italic; */
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 #home h2{
-    color: #000080;
-    font-size: 2.2rem;
+    color: #fff;
+    font-size: 3.2rem;
     letter-spacing: 1px;
 
 }
 
 #home p{
     width: 50%;
-    color: #000080;
+    color: #fff;
     font-size: 1rem;
     line-height: 25px;    
 }
@@ -136,12 +143,22 @@ nav .navigation ul li a:hover {
     background-color:#fff;
 }
 
+
 /* features */
 
 #features {
     padding: 5vw 8vw 0 8vw;
     text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;   
 }
+
+#features h1{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-decoration: underline;
+}
+
 
 /* for all features  */
 
@@ -153,9 +170,10 @@ nav .navigation ul li a:hover {
 }
 
 #features .fea-box {
-    background-color: #f9f9ff;
+    background-color: #fafaf1;
     text-align: start;
 }
+
 
 /* icon */
 
@@ -179,18 +197,25 @@ nav .navigation ul li a:hover {
     color: rgb(70, 70, 87);
 }
 
-#course {
-    padding: 5vw 8vw 0 8vw;
-    text-align: center;
-}
 
 /* course */
 
-#course {
-    padding: 8vw 8vw 0 8vw;
+
+#course h1 {
+    padding: 8vw 8vw 02vw 8vw;
     text-align: center;
-    flex-direction: column;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-decoration: underline;
 }
+
+#course  {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    /* text-decoration: underline; */
+}
+
+
 
 /* for All courses  */
 
@@ -200,6 +225,7 @@ nav .navigation ul li a:hover {
     grid-gap: 1rem;
     margin-top: 50px;
 }
+
 
 /* course 1 */
 #course .courses {
@@ -216,8 +242,9 @@ nav .navigation ul li a:hover {
     height: 60%;
     background-size: cover;
     background-position: center;
-    border-radius: 2%;
+    border-radius: 0%;
 }
+
 
 /* for course details  */
 
@@ -248,7 +275,8 @@ nav .navigation ul li a:hover {
 
 #registration {
     padding: 6vw 8vw 6vw 8vw;
-    background-image: linear-gradient(rgba(99,112,168,0.5) (rgba(81,91,233,0.5))) url(images/signup.svg);
+    background-image: url(images/back2.png);
+    z-index: 0 1 2;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -256,14 +284,15 @@ nav .navigation ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 #registration .reminder{
-    color: black;
+    color: #fff;
 }
 
 #registration .reminder h1{
-    color: black;
+    color: #fff;
 }
 
 #registration .reminder .time {
@@ -274,7 +303,7 @@ nav .navigation ul li a:hover {
 #registration .reminder .time .date {
     text-align: center;
     padding: 13px 33px;
-    background-color: red;
+    background-color: gray;
     /* rgba(255, 255, 255, 0.25) */
     backdrop-filter: blur(4px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -292,6 +321,7 @@ nav .navigation ul li a:hover {
     flex-direction: column;
     padding: 40px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    font-family: "Helvetica Neue", Arial, sans-serif;
 } 
 
 #registration .form input {
@@ -328,15 +358,33 @@ nav .navigation ul li a:hover {
 
 #registration .form a.yellow:hover {
     color: rgb(21, 21, 100);
-    background-color:gray;
+    background-color:#fff;
 }
 
 
 /* Experts  */
 
-#experts {
-    padding: 8vw 8vw 0 8vw;
+#experts h1{
+    padding: 8vw 0vw 0vw 0vw;
     text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    transform: translateY(0);
+    text-decoration: underline;
+}
+
+#experts p{
+    padding: 1vw 0vw 1vw 0vw;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    transform: translateY(0);
+}
+
+#experts .experts-box {
+    padding: 2vw 8vw 8vw 8vw;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    transform: translateY(0);
+    /* text-decoration: underline; */
 }
 
 #experts .experts-box {
@@ -345,6 +393,7 @@ nav .navigation ul li a:hover {
     grid-gap: 1rem;
     margin-top: 50px;
 }
+
 
 #experts .experts-box .profile {
     background-color: #fafaf1;
@@ -364,6 +413,8 @@ nav .navigation ul li a:hover {
 
 #experts .experts-box .pro-links i {
     color: black;
+    
+    
 }
 
 .pro-links {
@@ -393,6 +444,7 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 footer .footer-col{
@@ -466,6 +518,7 @@ footer .copyright {
 
 footer .copyright p {
     color: #fff;
+    font-style: oblique;
 }
 
 footer .copyright .pro-links {
@@ -475,10 +528,20 @@ footer .copyright .pro-links {
 footer .copyright .pro-links i {
     background-color: #5f7185;
     color: #fff;
-
 }
 
 footer .copyright .pro-links i:hover {
     background-color: #fdc93b;
     color: #2c2c2c;
+}
+
+
+@media (max-width: 769px ) {
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 130px;
+        cursor: pointer;
+    }
 }
